@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vibe-code-app-1
+    env: python
+    plan: free
+    buildCommand: pip install -r webapp/requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT webapp.app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production

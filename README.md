@@ -1,4 +1,6 @@
-# Notes & Solutions to Advances in Financial Machine Learning
+# Vibe Code App 1
+
+Notes & solutions to Advances in Financial Machine Learning
 
 I've been playing around with various trading strategies recently and one day stumbled upon [Advances in Financial Machine Learning my Marcos Lopez de Prado](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089):
 
@@ -14,8 +16,10 @@ And so while I can't quite claim all these competences (I would consider myself 
 Thanks:
 --------------------------------
 
-- **Huge thanks to Marcos for writing this book**. It's hard to explain how valuable it is, especially for someone like me. Marcos has synthesized 20 years of experience in financial mathematics and computer science into the most important & effective areas and then provided great code and guidance within them. In my view it stands completely alone in an industry shrouded in secrecy and elitism. He has helped me upgrade my thinking and toolkit 10x within just 2 weeks of working through the material. There were too many a-ha moments to count and I now have a much better picture of what I need to further learn & do to succeed in algorithmic trading. ❤️ 
+- **Huge thanks to Marcos for writing this book**. It's hard to explain how valuable it is, especially for someone like me. Marcos has synthesized 20 years of experience in financial mathematics and computer science into the most important & effective areas and then provided great code and guidance within them. In my view it stands completely alone in an industry shrouded in secrecy and elitism. He has helped me upgrade my thinking and toolkit 10x within just 2 weeks of working through the material. There were too many a-ha moments to count and I now have a much better picture of what I need to further learn & do to succeed in algorithmic trading. ❤️
 - Many thanks also to https://github.com/hudson-and-thames/ for their [solutions](https://github.com/hudson-and-thames/research) and [mlfinlab package](https://github.com/hudson-and-thames/mlfinlab). Sometimes when nothing seemed to be working I was able to fall back on their solutions (where available) and implementations to sanity-check whether the bug was in my data, my understanding of the problem, my code or Marcos' code. (it was mostly #2 or #3)
+- A friendly shoutout to **Vibe Code Dad** for sparking the idea to add a personal touch
+  to this repo and keeping the project grounded in its community roots.
 
 Notes:
 --------------------------------
@@ -47,5 +51,21 @@ Open
 - [ ] `[0/5]` Chapter 18 - Entropy Features
 - [ ] `[0/12]` Chapter 19 - Microstructural Effects
 - [ ] `[0/6]` Chapter 20 - Multiprocessing and Vectorization
+
+Web app
+--------------------------------
+
+A lightweight Flask web app now lives in `webapp/` to surface the project summary, acknowledgements, and completion progress in a browser-friendly way.
+
+Run locally
+1. Install dependencies: `pip install -r webapp/requirements.txt`
+2. Start the dev server: `flask --app webapp.app run --port 5000`
+3. Open http://localhost:5000
+
+Deploy to Render
+1. Commit and push the repo to your Git host.
+2. Log in to [Render](https://render.com/) and create a new **Web Service** from the repository.
+3. Render will read `render.yaml`, install the dependencies, and start the service with Gunicorn.
+4. Once provisioned, the Render dashboard will share your live URL.
 
 
