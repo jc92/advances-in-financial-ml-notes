@@ -1,4 +1,6 @@
-# Notes & Solutions to Advances in Financial Machine Learning
+# Vibe Code App 1
+
+Notes & solutions to Advances in Financial Machine Learning
 
 I've been playing around with various trading strategies recently and one day stumbled upon [Advances in Financial Machine Learning my Marcos Lopez de Prado](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089):
 
