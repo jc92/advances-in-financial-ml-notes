@@ -52,4 +52,20 @@ Open
 - [ ] `[0/12]` Chapter 19 - Microstructural Effects
 - [ ] `[0/6]` Chapter 20 - Multiprocessing and Vectorization
 
+Web app
+--------------------------------
+
+A lightweight Flask web app now lives in `webapp/` to surface the project summary, acknowledgements, and completion progress in a browser-friendly way.
+
+Run locally
+1. Install dependencies: `pip install -r webapp/requirements.txt`
+2. Start the dev server: `flask --app webapp.app run --port 5000`
+3. Open http://localhost:5000
+
+Deploy to Render
+1. Commit and push the repo to your Git host.
+2. Log in to [Render](https://render.com/) and create a new **Web Service** from the repository.
+3. Render will read `render.yaml`, install the dependencies, and start the service with Gunicorn.
+4. Once provisioned, the Render dashboard will share your live URL.
+
 

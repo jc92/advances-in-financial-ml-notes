@@ -1,0 +1,13 @@
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.list-group-item code {
+  background-color: #f6f8fa;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+}
+
+footer {
+  text-align: center;
+}
